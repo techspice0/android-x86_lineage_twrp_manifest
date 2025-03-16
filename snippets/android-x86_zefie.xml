@@ -35,11 +35,10 @@
 <project path="device/generic/x86" name="device_generic_x86" groups="pdk" remote="x86" />
 <project path="device/generic/x86_64" name="device_generic_x86_64" groups="pdk" remote="x86" />
 
-<!-- These should sync under platform/ -->
-<project path="platform/frameworks/native" name="frameworks_native" groups="pdk" remote="x86" />
-<project path="platform/system/core" name="system_core" groups="pdk" remote="x86" />
-<project path="platform/system/extras" name="system_extras" groups="pdk" remote="x86" />
-<project path="platform/system/netd" name="system_netd" groups="pdk" remote="x86" />
+<project path="frameworks/native" name="frameworks_native" groups="pdk" remote="x86" />
+<project path="system/core" name="system_core" groups="pdk" remote="x86" />
+<project path="system/extras" name="system_extras" groups="pdk" remote="x86" />
+<project path="system/netd" name="system_netd" groups="pdk" remote="x86" />
 
 <!-- External components -->
 <project path="external/busybox" name="external_busybox" remote="x86" />
