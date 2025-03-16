@@ -31,6 +31,10 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the LineageOS, android-x86, and zefie trees to build TWRP for Android-x86, use a command like this:
 
+   mkdir ~/twrp-x86
+
+  **NAME/PATH IS YOUR CHOICE**
+
     repo init -u https://github.com/techspice0/android-x86_lineage_twrp_manifest.git -b twrp-14.1
 
 Then to sync up:
