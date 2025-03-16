@@ -30,7 +30,7 @@
 -->
 <!-- <project path="kernel" name="kernel" remote="x86" revision="kernel-4.9" /> -->
 <project path="bionic" name="bionic" groups="pdk" remote="x86" />
-<project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="aosp" revision="d4f287145feb677e99f0bf30fa6a0e14bd79f896" />
+<project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" remote="aosp" revision="d4f287145feb677e99f0bf30fa6a0e14bd79f896" />
 <project path="device/generic/firmware" name="device_generic_firmware" remote="x86" />
 <project path="device/generic/x86" name="device_generic_x86" groups="pdk" remote="x86" />
 <project path="device/generic/x86_64" name="device_generic_x86_64" groups="pdk" remote="x86" />
@@ -64,7 +64,7 @@
 <project path="hardware/intel/libsensors" name="hardware_intel_libsensors" remote="x86" />
 <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="x86" />
 <project path="hardware/x86power" name="hardware_x86power" remote="x86" />
-<project path="hardware/intel/img/hwcomposer" name="hardware_intel_img_hwcomposer" remote="aosp" groups="notdefault,intel,pdk" />
+<project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" remote="aosp" groups="notdefault,intel,pdk" />
 
 <!-- Bootable components -->
 <!-- <project path="platform/bootable/newinstaller" name="bootable_newinstaller" remote="x86" revision="nougat-x86" /> -->
