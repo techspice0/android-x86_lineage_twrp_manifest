@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="x86" fetch="git://git.osdn.net/gitroot/android-x86" revision="nougat-x86" />
+	<remote name="x86" fetch="git://git.code.sf.net/p/android-x86" revision="nougat-x86" />
 
 	<!-- Lineage remove to replace from android-x86 -->
 	<remove-project name="LineageOS/android_build" />
