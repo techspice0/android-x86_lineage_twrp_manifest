@@ -4,14 +4,6 @@ apt install bc bison build-essential curl flex g++-multilib gcc-multilib git gnu
 ---------------
 For Ubuntu 23.10 (mantic), install libncurses5 from 23.04 (lunar) as follows:
 
-wget https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2_amd64.deb && sudo dpkg -i libtinfo5_6.3-2_amd64.deb && rm -f libtinfo5_6.3-2_amd64.deb
-
-wget https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.3-2_amd64.deb && sudo dpkg -i libncurses5_6.3-2_amd64.deb && rm -f libncurses5_6.3-2_amd64.deb
-
----------------
-
-Want one-liner?
-
 wget https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2_amd64.deb && sudo dpkg -i libtinfo5_6.3-2_amd64.deb && rm -f libtinfo5_6.3-2_amd64.deb && wget https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.3-2_amd64.deb && sudo dpkg -i libncurses5_6.3-2_amd64.deb && rm -f libncurses5_6.3-2_amd64.deb
 
 ---------------
@@ -22,6 +14,7 @@ lib32ncurses5-dev libncurses5 libncurses5-dev
 Additionally, for Ubuntu versions older than 20.04 (focal), install also:
 
 libwxgtk3.0-dev
+
 While for Ubuntu versions older than 16.04 (xenial), install: libwxgtk2.8-dev
 
 ---------------
