@@ -28,46 +28,47 @@
 		<copyfile src="core/root.mk" dest="Makefile" />
 	</project>
 -->
-<!-- <project path="kernel" name="kernel" remote="x86" revision="kernel-4.9" /> -->
-<project path="bionic" name="bionic" groups="pdk" remote="x86" />
-<project path="build/kati" name="build-kati" groups="pdk,tradefed" remote="aosp" revision="d4f287145feb677e99f0bf30fa6a0e14bd79f896" />
-<project path="device/generic/firmware" name="device-generic-firmware" remote="x86" />
-<project path="device/generic/x86" name="device-generic-x86" groups="pdk" remote="x86" />
-<project path="device/generic/x86_64" name="device-generic-x86_64" groups="pdk" remote="x86" />
+<!-- <project path="kernel" name="kernel android-x86-kernel" remote="x86" revision="kernel-4.9" /> -->
+<project path="bionic" name="bionic android-x86-bionic" groups="pdk" remote="x86" />
+<project path="build/kati" name="build-kati android-x86-build-kati" groups="pdk,tradefed" remote="aosp" revision="d4f287145feb677e99f0bf30fa6a0e14bd79f896" />
+<project path="device/generic/firmware" name="device-generic-firmware android-x86-device-generic-firmware" remote="x86" />
+<project path="device/generic/x86" name="device-generic-x86 android-x86-device-generic-x86" groups="pdk" remote="x86" />
+<project path="device/generic/x86_64" name="device-generic-x86_64 android-x86-device-generic-x86_64" groups="pdk" remote="x86" />
 
 <!-- These should sync under platform/ -->
-<project path="platform/frameworks/native" name="frameworks-native" groups="pdk" remote="x86" />
-<project path="platform/system/core" name="system-core" groups="pdk" remote="x86" />
-<project path="platform/system/extras" name="system-extras" groups="pdk" remote="x86" />
-<project path="platform/system/netd" name="system-netd" groups="pdk" remote="x86" />
+<project path="platform/frameworks/native" name="frameworks-native android-x86-frameworks-native" groups="pdk" remote="x86" />
+<project path="platform/system/core" name="system-core android-x86-system-core" groups="pdk" remote="x86" />
+<project path="platform/system/extras" name="system-extras android-x86-system-extras" groups="pdk" remote="x86" />
+<project path="platform/system/netd" name="system-netd android-x86-system-netd" groups="pdk" remote="x86" />
 
 <!-- External components -->
-<project path="external/busybox" name="external-busybox" remote="x86" />
-<project path="external/e2fsprogs" name="external-e2fsprogs" groups="pdk" remote="x86" />
-<project path="external/eject" name="external-eject" remote="x86" />
-<project path="external/exfat" name="external-exfat" groups="pdk" remote="x86" />
-<project path="external/libdrm" name="external-libdrm" groups="pdk" remote="x86" />
-<project path="external/llvm" name="external-llvm" groups="pdk" remote="x86" />
-<project path="external/mksh" name="external-mksh" groups="pdk" remote="x86" />
-<!-- <project path="external/ntfs-3g" name="external-ntfs-3g" groups="pdk" remote="x86" /> -->
-<project path="external/toybox" name="external-toybox" groups="pdk" remote="x86" />
-<project path="external/v86d" name="external-v86d" remote="x86" />
-<project path="external/mesa" name="external-mesa" remote="x86" />
-<project path="external/drm_gralloc" name="external-drm_gralloc" groups="drm_gralloc" remote="x86" />
-<project path="external/drm_hwcomposer" name="external-drm_hwcomposer" groups="drm_hwcomposer" remote="x86" />
-<project path="external/gbm_gralloc" name="external-gbm_gralloc" remote="x86" />
+<project path="external/busybox" name="external-busybox android-x86-external-busybox" remote="x86" />
+<project path="external/e2fsprogs" name="external-e2fsprogs android-x86-external-e2fsprogs" groups="pdk" remote="x86" />
+<project path="external/eject" name="external-eject android-x86-external-eject" remote="x86" />
+<project path="external/exfat" name="external-exfat android-x86-external-exfat" groups="pdk" remote="x86" />
+<project path="external/libdrm" name="external-libdrm android-x86-external-libdrm" groups="pdk" remote="x86" />
+<project path="external/llvm" name="external-llvm android-x86-external-llvm" groups="pdk" remote="x86" />
+<project path="external/mksh" name="external-mksh android-x86-external-mksh" groups="pdk" remote="x86" />
+<!-- <project path="external/ntfs-3g" name="external-ntfs-3g android-x86-external-ntfs-3g" groups="pdk" remote="x86" /> -->
+<project path="external/toybox" name="external-toybox android-x86-external-toybox" groups="pdk" remote="x86" />
+<project path="external/v86d" name="external-v86d android-x86-external-v86d" remote="x86" />
+<project path="external/mesa" name="external-mesa android-x86-external-mesa" remote="x86" />
+<project path="external/drm_gralloc" name="external-drm_gralloc android-x86-external-drm_gralloc" groups="drm_gralloc" remote="x86" />
+<project path="external/drm_hwcomposer" name="external-drm_hwcomposer android-x86-external-drm_hwcomposer" groups="drm_hwcomposer" remote="x86" />
+<project path="external/gbm_gralloc" name="external-gbm_gralloc android-x86-external-gbm_gralloc" remote="x86" />
 
 <!-- Hardware components -->
-<project path="hardware/intel/audio_media" name="hardware-intel-audio_media" groups="intel,pdk" remote="x86" />
-<project path="hardware/intel/common/libva" name="hardware-intel-common-libva" groups="intel,pdk" remote="x86" />
-<project path="hardware/intel/common/vaapi" name="hardware-intel-common-vaapi" remote="x86" />
-<project path="hardware/intel/libsensors" name="hardware-intel-libsensors" remote="x86" />
-<project path="hardware/libhardware" name="hardware-libhardware" groups="pdk" remote="x86" />
-<project path="hardware/x86power" name="hardware-x86power" remote="x86" />
-<project path="hardware/intel/img/hwcomposer" name="hardware-intel-img-hwcomposer" remote="aosp" groups="notdefault,intel,pdk" />
+<project path="hardware/intel/audio_media" name="hardware-intel-audio_media android-x86-hardware-intel-audio_media" groups="intel,pdk" remote="x86" />
+<project path="hardware/intel/common/libva" name="hardware-intel-common-libva android-x86-hardware-intel-common-libva" groups="intel,pdk" remote="x86" />
+<project path="hardware/intel/common/vaapi" name="hardware-intel-common-vaapi android-x86-hardware-intel-common-vaapi" remote="x86" />
+<project path="hardware/intel/libsensors" name="hardware-intel-libsensors android-x86-hardware-intel-libsensors" remote="x86" />
+<project path="hardware/libhardware" name="hardware-libhardware android-x86-hardware-libhardware" groups="pdk" remote="x86" />
+<project path="hardware/x86power" name="hardware-x86power android-x86-hardware-x86power" remote="x86" />
+<project path="hardware/intel/img/hwcomposer" name="hardware-intel-img-hwcomposer android-x86-hardware-intel-img-hwcomposer" remote="aosp" groups="notdefault,intel,pdk" />
 
 <!-- Bootable components -->
-<!-- <project path="platform/bootable/newinstaller" name="bootable-newinstaller" remote="x86" revision="nougat-x86" /> -->
+<!-- <project path="platform/bootable/newinstaller" name="bootable-newinstaller android-x86-bootable-newinstaller" remote="x86" revision="nougat-x86" /> -->
+
 
 
 	<!-- Lineage (re)adds -->
