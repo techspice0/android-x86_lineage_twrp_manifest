@@ -14,9 +14,8 @@ lib32ncurses5-dev libncurses5 libncurses5-dev
 Additionally, for Ubuntu versions older than 20.04 (focal), install also:
 
 libwxgtk3.0-dev
-While for Ubuntu versions older than 16.04 (xenial), install:
+While for Ubuntu versions older than 16.04 (xenial), install: libwxgtk2.8-dev
 
-libwxgtk2.8-dev
 ---------------
 
 To get started with LineageOS sources to build TWRP for Android-x86, you'll need to get
