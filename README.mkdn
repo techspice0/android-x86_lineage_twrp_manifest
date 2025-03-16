@@ -11,9 +11,7 @@ wget https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2_a
 While for Ubuntu versions older than 23.10 (mantic), simply install:
 
 lib32ncurses5-dev libncurses5 libncurses5-dev
-Additionally, for Ubuntu versions older than 20.04 (focal), install also:
-
-libwxgtk3.0-dev
+Additionally, for Ubuntu versions older than 20.04 (focal), install also: libwxgtk3.0-dev
 
 While for Ubuntu versions older than 16.04 (xenial), install: libwxgtk2.8-dev
 
