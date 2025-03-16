@@ -34,7 +34,7 @@ Then to sync up:
 
 Then to build:
 
-    . build/envsetup.sh
+    source ./build/envsetup.sh
     lunch android_x86-eng (for 32bit, OR android_x86_64-eng for 64-bit)
     make recoveryimage
     make iso_img
