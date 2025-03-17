@@ -14,6 +14,7 @@ lib32ncurses5-dev libncurses5 libncurses5-dev
 Additionally, for Ubuntu versions older than 20.04 (focal), install also: libwxgtk3.0-dev
 
 While for Ubuntu versions older than 16.04 (xenial), install: libwxgtk2.8-dev
+
 ---------------
 
 NOW INSTALL PYENV AND SET DEFAULT VERSION TO 2.7.18 
