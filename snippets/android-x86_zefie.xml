@@ -1,88 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="x86" fetch="git://git.code.sf.net/p/android-x86" revision="nougat-x86" />
+    <remote name="x86" fetch="git://git.code.sf.net/p/android-x86" revision="nougat-x86" />
 
-	<!-- Lineage remove to replace from android-x86 -->
-	<remove-project name="LineageOS/android_build" />
-	<remove-project name="LineageOS/android_bionic" />
-	<remove-project name="LineageOS/android_build_kati" />
-	<remove-project name="LineageOS/android_external_busybox" />
-	<remove-project name="LineageOS/android_frameworks_native" />
-	<remove-project name="LineageOS/android_external_e2fsprogs" />
-	<remove-project name="LineageOS/android_external_exfat" />
-	<remove-project name="platform/external/libdrm" />
-	<remove-project name="platform/external/llvm" />
-	<remove-project name="LineageOS/android_external_mksh" />
-<!--	<remove-project name="LineageOS/android_external_ntfs-3g" /> -->
-	<remove-project name="LineageOS/android_external_toybox" />
-	<remove-project name="LineageOS/android_hardware_libhardware" />
-	<remove-project name="LineageOS/android_system_core" />
-	<remove-project name="LineageOS/android_system_extras" />
-	<remove-project name="LineageOS/android_system_netd" />
-	<remove-project name="LineageOS/android_system_sepolicy" />
+    <!-- Lineage remove to replace from android-x86 -->
+    <remove-project name="LineageOS/android_build" />
+    <remove-project name="LineageOS/android_bionic" />
+    <remove-project name="LineageOS/android_build_kati" />
+    <remove-project name="LineageOS/android_external_busybox" />
+    <remove-project name="LineageOS/android_frameworks_native" />
+    <remove-project name="LineageOS/android_external_e2fsprogs" />
+    <remove-project name="LineageOS/android_external_exfat" />
+    <remove-project name="platform/external/libdrm" />
+    <remove-project name="platform/external/llvm" />
+    <remove-project name="LineageOS/android_external_mksh" />
+    <!-- <remove-project name="LineageOS/android_external_ntfs-3g" /> -->
+    <remove-project name="LineageOS/android_external_toybox" />
+    <remove-project name="LineageOS/android_hardware_libhardware" />
+    <remove-project name="LineageOS/android_system_core" />
+    <remove-project name="LineageOS/android_system_extras" />
+    <remove-project name="LineageOS/android_system_netd" />
+    <remove-project name="LineageOS/android_system_sepolicy" />
 
-	<!-- android-x86 adds -->
-<!--
-	<project path="build" name="platform/build" groups="pdk,tradefed" remote="x86" revision="nougat-x86" >
-		<copyfile src="core/root.mk" dest="Makefile" />
-	</project>
--->
-<!-- <project path="kernel" name="kernel" remote="x86" revision="kernel-4.9" /> -->
-<project path="bionic" name="bionic" groups="pdk" remote="x86" />
-<project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" remote="aosp" revision="d4f287145feb677e99f0bf30fa6a0e14bd79f896" />
-<project path="device/generic/firmware" name="device_generic_firmware" remote="x86" />
-<project path="device/generic/x86" name="device_generic_x86" groups="pdk" remote="x86" />
-<project path="device/generic/x86_64" name="device_generic_x86_64" groups="pdk" remote="x86" />
+    <!-- android-x86 adds -->
+    <!--
+    <project path="build" name="platform/build" groups="pdk,tradefed" remote="x86" revision="nougat-x86" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
+    -->
+    <!-- <project path="kernel" name="kernel" remote="x86" revision="kernel-4.9" /> -->
+    <project path="bionic" name="bionic" groups="pdk" remote="x86" />
+    <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" remote="aosp" revision="d4f287145feb677e99f0bf30fa6a0e14bd79f896" />
+    <project path="device/generic/firmware" name="device_generic_firmware" remote="x86" />
+    <project path="device/generic/x86" name="device_generic_x86" groups="pdk" remote="x86" />
+    <project path="device/generic/x86_64" name="device_generic_x86_64" groups="pdk" remote="x86" />
 
-<project path="frameworks/native" name="frameworks_native" groups="pdk" remote="x86" />
-<project path="system/core" name="system_core" groups="pdk" remote="x86" />
-<project path="system/extras" name="system_extras" groups="pdk" remote="x86" />
-<project path="system/netd" name="system_netd" groups="pdk" remote="x86" />
+    <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="x86" />
+    <project path="system/core" name="system_core" groups="pdk" remote="x86" />
+    <project path="system/extras" name="system_extras" groups="pdk" remote="x86" />
+    <project path="system/netd" name="system_netd" groups="pdk" remote="x86" />
 
-<!-- External components -->
-<project path="external/busybox" name="external_busybox" remote="x86" />
-<project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="x86" />
-<project path="external/eject" name="external_eject" remote="x86" />
-<project path="external/exfat" name="external_exfat" groups="pdk" remote="x86" />
-<project path="external/libdrm" name="external_libdrm" groups="pdk" remote="x86" />
-<project path="external/llvm" name="external_llvm" groups="pdk" remote="x86" />
-<project path="external/mksh" name="external_mksh" groups="pdk" remote="x86" />
-<!-- <project path="external/ntfs-3g" name="external_ntfs_3g" groups="pdk" remote="x86" /> -->
-<project path="external/toybox" name="external_toybox" groups="pdk" remote="x86" />
-<project path="external/v86d" name="external_v86d" remote="x86" />
-<project path="external/mesa" name="external_mesa" remote="x86" />
-<project path="external/drm_gralloc" name="external_drm_gralloc" groups="drm_gralloc" remote="x86" />
-<project path="external/drm_hwcomposer" name="external_drm_hwcomposer" groups="drm_hwcomposer" remote="x86" />
-<project path="external/gbm_gralloc" name="external_gbm_gralloc" remote="x86" />
+    <!-- External components -->
+    <project path="external/busybox" name="external_busybox" remote="x86" />
+    <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="x86" />
+    <project path="external/eject" name="external_eject" remote="x86" />
+    <project path="external/exfat" name="external_exfat" groups="pdk" remote="x86" />
+    <project path="external/libdrm" name="external_libdrm" groups="pdk" remote="x86" />
+    <project path="external/llvm" name="external_llvm" groups="pdk" remote="x86" />
+    <project path="external/mksh" name="external_mksh" groups="pdk" remote="x86" />
+    <!-- <project path="external/ntfs-3g" name="external_ntfs_3g" groups="pdk" remote="x86" /> -->
+    <project path="external/toybox" name="external_toybox" groups="pdk" remote="x86" />
+    <project path="external/v86d" name="external_v86d" remote="x86" />
+    <project path="external/mesa" name="external_mesa" remote="x86" />
+    <project path="external/drm_gralloc" name="external_drm_gralloc" groups="drm_gralloc" remote="x86" />
+    <project path="external/drm_hwcomposer" name="external_drm_hwcomposer" groups="drm_hwcomposer" remote="x86" />
+    <project path="external/gbm_gralloc" name="external_gbm_gralloc" remote="x86" />
 
-<!-- Hardware components -->
-<project path="hardware/intel/audio_media" name="hardware_intel_audio_media" groups="intel,pdk" remote="x86" />
-<project path="hardware/intel/common/libva" name="hardware_intel_common_libva" groups="intel,pdk" remote="x86" />
-<project path="hardware/intel/common/vaapi" name="hardware_intel_common_vaapi" remote="x86" />
-<project path="hardware/intel/libsensors" name="hardware_intel_libsensors" remote="x86" />
-<project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="x86" />
-<project path="hardware/x86power" name="hardware_x86power" remote="x86" />
-<project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" remote="aosp" groups="notdefault,intel,pdk" />
+    <!-- Hardware components -->
+    <project path="hardware/intel/audio_media" name="hardware_intel_audio_media" groups="intel,pdk" remote="x86" />
+    <project path="hardware/intel/common/libva" name="hardware_intel_common_libva" groups="intel,pdk" remote="x86" />
+    <project path="hardware/intel/common/vaapi" name="hardware_intel_common_vaapi" remote="x86" />
+    <project path="hardware/intel/libsensors" name="hardware_intel_libsensors" remote="x86" />
+    <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="x86" />
+    <project path="hardware/x86power" name="hardware_x86power" remote="x86" />
+    <project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" remote="aosp" groups="notdefault,intel,pdk" />
 
-<!-- Bootable components -->
-<!-- <project path="platform/bootable/newinstaller" name="bootable_newinstaller" remote="x86" revision="nougat-x86" /> -->
+    <!-- Bootable components -->
+    <!-- <project path="platform/bootable/newinstaller" name="bootable_newinstaller" remote="x86" revision="nougat-x86" /> -->
 
 
-	<!-- Lineage (re)adds -->
-	<project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" />
+    <!-- Lineage (re)adds -->
+    <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" />
 
-	<!-- AOSP adds -->
-	<project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" remote="aosp" />
+    <!-- AOSP adds -->
+    <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" remote="aosp" />
 
-	<!-- zefie custom twrp build overrides -->
-	<remove-project name="omnirom/android_bootable_recovery" />
-	<project path="bootable/recovery" name="zefie/android_bootable_recovery_x86target" remote="github" revision="drm-fix" groups="pdk-cw-fs"/>
-	<project path="device/generic/common" name="zefie/android-x86_device_generic_common" remote="github" revision="nougat-x86" groups="pdk" />
-	<project path="kernel" name="zefie/android-x86_kernel_4.9" remote="github" revision="kernel-4.9" clone-depth="1" />
-	<project path="bootable/newinstaller" name="zefie/android-x86_installer" remote="github" revision="nougat-x86" />
-	<project path="build" name="zefie/android-x86_platform_build" groups="pdk,tradefed" remote="github" revision="nougat-x86" >
-		<copyfile src="core/root.mk" dest="Makefile" />
-	</project>
+    <!-- zefie custom twrp build overrides -->
+    <remove-project name="omnirom/android_bootable_recovery" />
+    <project path="bootable/recovery" name="zefie/android_bootable_recovery_x86target" remote="github" revision="drm-fix" groups="pdk-cw-fs"/>
+    <project path="device/generic/common" name="zefie/android-x86_device_generic_common" remote="github" revision="nougat-x86" groups="pdk" />
+    <project path="kernel" name="zefie/android-x86_kernel_4.9" remote="github" revision="kernel-4.9" clone-depth="1" />
+    <project path="bootable/newinstaller" name="zefie/android-x86_installer" remote="github" revision="nougat-x86" />
+    <project path="build" name="zefie/android-x86_platform_build" groups="pdk,tradefed" remote="github" revision="nougat-x86" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
+
+    <!-- Replace X86Assembler.h with the patched version from your repo -->
+    <project path="system/core/libpixelflinger/codeflinger/x86" 
+        name="techspice0/patched_X86Assembler.h" 
+        remote="github" 
+        revision="main" />
 
 </manifest>
