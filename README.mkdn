@@ -15,6 +15,7 @@ Additionally, for Ubuntu versions older than 20.04 (focal), install also: libwxg
 
 While for Ubuntu versions older than 16.04 (xenial), install: libwxgtk2.8-dev
 ---------------
+
 NOW INSTALL PYENV AND SET DEFAULT VERSION TO 2.7.18 
 
 curl -fsSL https://pyenv.run | bash
