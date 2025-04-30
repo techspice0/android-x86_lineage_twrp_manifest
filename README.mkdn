@@ -61,8 +61,8 @@ Then to build:
 
     source ./build/envsetup.sh
     lunch android_x86-eng (for 32bit, OR "lunch android_x86_64-eng" for 64-bit)
-    mka recoveryimage
-    mka iso_img
+    make recoveryimage -j $(nproc --all)
+    make iso_img
 
 After the build, your iso will be in:
 
