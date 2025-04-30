@@ -55,7 +55,7 @@ To initialize your local repository using the LineageOS, android-x86, and zefie 
 
 Then to sync up:
 
-    repo sync -j $(nproc --all)
+    repo sync -j $(nproc --all) && repo sync
 
 Then to build:
 
