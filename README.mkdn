@@ -34,14 +34,6 @@ To install repo use a command like this:
 
     curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 
-Put the ~/bin directory in your path of execution
-In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening ~/.profile with a text editor and verifying the following code exists (add it if it is missing):
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-Then, run source ~/.profile to update your environment.
 
 To initialize your local repository using the LineageOS, android-x86, and zefie trees to build TWRP for Android-x86, use a command like this:
 
