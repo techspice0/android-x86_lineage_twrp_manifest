@@ -32,7 +32,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the LineageOS, android-x86, and zefie trees to build TWRP for Android-x86, use a command like this:
 
-   curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
+    curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 
 **NAME/PATH IS YOUR CHOICE**
 
