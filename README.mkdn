@@ -42,10 +42,8 @@ In recent versions of Ubuntu, ~/bin should already be in your PATH. You can chec
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi"
-
-----------------
-
 Then, run source ~/.profile to update your environment.
+---------------
 
 To initialize your local repository using the LineageOS, android-x86, and zefie trees to build TWRP for Android-x86, use a command like this:
 
